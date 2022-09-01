@@ -23,8 +23,6 @@ const transpose = function(matrix) {
 
 const wordSearch = (letters, word) => { 
   const horizontalJoin = letters.map(ls => ls.join(''))
-  //const reverseHorizontal = letters.reverse();
-  //console.log(reverseHorizontal)
   const vertical = transpose(letters);
   const verticalJoin = vertical.map(el => el.join(''))
 
@@ -62,7 +60,7 @@ console.log(wordSearch([
 
 
 
-
+// Pair-programmed with Simran Kalirai
 
 
 module.exports = wordSearch
